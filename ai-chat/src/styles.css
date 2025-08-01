@@ -1,0 +1,8 @@
+body { margin: 0; font-family: sans-serif; }
+:root { --bg-day: #f0f0f0; --bg-night: #2c2c2c; --text-day: #000; --text-night: #fff; }
+body.day { background: var(--bg-day); color: var(--text-day); }
+body.night { background: var(--bg-night); color: var(--text-night); }
+.chat-window { max-width: 600px; margin: auto; padding: 1rem; }
+.messages { list-style: none; padding: 0; }
+.message { margin-bottom: 0.5rem; }
+.theme-toggle { position: fixed; top: 1rem; right: 1rem; }

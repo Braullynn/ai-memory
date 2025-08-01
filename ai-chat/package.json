@@ -1,0 +1,19 @@
+{
+  "name": "ai-chat",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "server",
+    "src"
+  ],
+  "scripts": {
+    "start": "concurrently "npm run dev:server" "npm run dev:client"",
+    "dev:server": "cd server && nodemon index.js",
+    "dev:client": "cd src && npm start",
+    "build": "cd src && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.0"
+  }
+}
