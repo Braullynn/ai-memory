@@ -7,7 +7,7 @@
     "src"
   ],
   "scripts": {
-    "start": "concurrently "npm run dev:server" "npm run dev:client"",
+    "start": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:server": "cd server && nodemon index.js",
     "dev:client": "cd src && npm start",
     "build": "cd src && npm run build"
